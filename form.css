@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 10px;
+    transform: scale(1.0);
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    width: 150px;
+    height: 150px;
+
+}
+
+form {
+    width: 30%;
+    margin: 20px auto;
+    padding: 30px;
+    background: transparent;
+    /* Gradient background */
+    border: 2px solid white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(8, 8, 8, 0.1);
+    /* Box shadow for card effect */
+    border-radius: 10px;
+    /* Rounded corners */
+    transition: transform 0.3s ease;
+}
+
+label {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+textarea,
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #625e5e;
+}
+
+.none {
+    display: none;
+}
+
+.visible {
+    display: block;
+    color: red;
+}
+
+span.error-msg {
+    color: red;
+    font-size: 20px;
+}
+
+/* input.error,
+textarea.error {
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+input.valid,
+textarea.valid {
+    border: 3px solid green;
+    border-radius: 10px;
+} */
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    form {
+        width: 80%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    textarea,
+    input {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        padding: 8px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    form {
+        margin-top: 30px auto;
+        padding: 15px;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .img {
+        width: 50px;
+        height: 50px;
+        margin-top: 0%;
+        display: block;
+    }
+
+    textarea,
+    input {
+        width: 100%;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input[type="submit"] {
+        padding: 7px;
+    }
+}
